@@ -24,7 +24,7 @@
         <link rel="website">https://heinzenknecht.com/</link>
       </metadata>
       <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
-        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Align%20items%20for%20asset%20creation.lua</source>
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/e351037f6dfd51b62f43fb5bcf04d65a98e7d032/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Align%20items%20for%20asset%20creation.lua</source>
       </version>
     </reapack>
     <reapack name="Heinzenknecht Tools - Create regions from selected items.lua" type="script" desc="Heinzenknecht Tools - Create regions from selected items">
@@ -40,7 +40,7 @@
         <link rel="website">https://heinzenknecht.com/</link>
       </metadata>
       <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
-        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Create%20regions%20from%20selected%20items.lua</source>
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/e351037f6dfd51b62f43fb5bcf04d65a98e7d032/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Create%20regions%20from%20selected%20items.lua</source>
       </version>
     </reapack>
     <reapack name="Heinzenknecht Tools - Focus view to selected items.lua" type="script" desc="Heinzenknecht Tools - Focus view to selected items">
@@ -55,7 +55,7 @@
         <link rel="website">https://heinzenknecht.com/</link>
       </metadata>
       <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
-        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Focus%20view%20to%20selected%20items.lua</source>
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/e351037f6dfd51b62f43fb5bcf04d65a98e7d032/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Focus%20view%20to%20selected%20items.lua</source>
       </version>
     </reapack>
     <reapack name="Heinzenknecht Tools - Propagate item fades.lua" type="script" desc="Heinzenknecht Tools - Propagate item fades">
@@ -70,7 +70,7 @@
         <link rel="website">https://heinzenknecht.com/</link>
       </metadata>
       <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
-        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Propagate%20item%20fades.lua</source>
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/e351037f6dfd51b62f43fb5bcf04d65a98e7d032/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Propagate%20item%20fades.lua</source>
       </version>
     </reapack>
     <reapack name="Heinzenknecht Tools - Split items and delete left side.lua" type="script" desc="Heinzenknecht Tools - Split items and delete left side">
@@ -85,7 +85,7 @@
         <link rel="website">https://heinzenknecht.com/</link>
       </metadata>
       <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
-        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Split%20items%20and%20delete%20left%20side.lua</source>
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/e351037f6dfd51b62f43fb5bcf04d65a98e7d032/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Split%20items%20and%20delete%20left%20side.lua</source>
       </version>
     </reapack>
     <reapack name="Heinzenknecht Tools - Split items and delete right side.lua" type="script" desc="Heinzenknecht Tools - Split items and delete right side">
@@ -100,7 +100,7 @@
         <link rel="website">https://heinzenknecht.com/</link>
       </metadata>
       <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
-        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Split%20items%20and%20delete%20right%20side.lua</source>
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/e351037f6dfd51b62f43fb5bcf04d65a98e7d032/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Split%20items%20and%20delete%20right%20side.lua</source>
       </version>
     </reapack>
   </category>
