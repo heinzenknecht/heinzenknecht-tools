@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Heinzenknecht Tools" commit="e691878e71dc657416c9cc0ec15540470b9ce0df">
+<index version="1" name="Heinzenknecht Tools" commit="e351037f6dfd51b62f43fb5bcf04d65a98e7d032">
   <category name="Heinzenknecht Tools">
     <reapack name="Heinzenknecht Tools - Align items for asset creation.lua" type="script" desc="Heinzenknecht Tools - Align items for asset creation">
       <metadata>
@@ -27,7 +27,7 @@
         <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Align%20items%20for%20asset%20creation.lua</source>
       </version>
     </reapack>
-    <reapack name="Heinzenknecht Tools - Create regions from selected items.lua" type="script" desc="Heinzenknecht Tools - Create regions from selected items grouped by time overlap">
+    <reapack name="Heinzenknecht Tools - Create regions from selected items.lua" type="script" desc="Heinzenknecht Tools - Create regions from selected items">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
