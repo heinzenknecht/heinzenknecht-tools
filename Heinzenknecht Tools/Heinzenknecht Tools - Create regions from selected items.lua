@@ -1,4 +1,4 @@
--- @description Heinzenknecht Tools - Create regions from selected items grouped by time overlap
+-- @description Heinzenknecht Tools - Create regions from selected items
 -- @version 1.0
 -- @author Guido Heinzenknecht
 -- @link https://heinzenknecht.com/
