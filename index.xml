@@ -1,54 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="ReaPack Repository Template" commit="58a3e39ba95bd0f35846aa1f39aa4cb2574295e1">
-  <category name="Example">
-    <reapack name="cfillion_Hello world.lua" type="script" desc="Hello world">
+<index version="1" name="Heinzenknecht Tools" commit="3f9d8d95b8d4b21fb933334e557d704e063b730d">
+  <category name="Heinzenknecht Tools">
+    <reapack name="Heinzenknecht Tools - Align items for asset creation.lua" type="script" desc="Heinzenknecht Tools - Align items for asset creation">
       <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 This is an example of a package file. It installs itself as a ReaScript that does nothing but show "Hello World!" in REAPER's scripting console.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Packages may also include additional files specified using the @provides tag.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 This text is the documentation shown when using ReaPack's "About this package" feature. {\field{\*\fldinst{HYPERLINK "https://commonmark.org/"}}{\fldrslt{\ul
-Markdown
-}}}
- {\i formatting} is supported.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Aligns selected items into a structured layout for asset creation workflows.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If all selected units are on a single track, the script behaves as a standard sequential arranger:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab units are ordered by their timeline position\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab each unit is placed immediately after the previous one\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a 500 ms gap is inserted between units\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If selected units span multiple tracks, units are grouped according to their order on each track:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the first unit on every track starts at the same time\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab each subsequent group starts after the longest unit in the previous group plus a 500 ms gap\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab if a track contains fewer units than others, the remaining tracks continue following the same grouping logic\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 REAPER item groups are treated as single units:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab all selected items sharing the same I_GROUPID are moved together\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the unit duration is calculated from the earliest start position to the latest end position within the group\sa180\par}
 }
 ]]></description>
+        <link rel="website">https://heinzenknecht.com/</link>
       </metadata>
-      <version name="1.0" author="cfillion" time="2021-01-04T23:30:32Z">
-        <source main="main">https://github.com/cfillion/reapack-repository-template/raw/58a3e39ba95bd0f35846aa1f39aa4cb2574295e1/Example/cfillion_Hello%20world.lua</source>
+      <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Align%20items%20for%20asset%20creation.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Heinzenknecht Tools - Create regions from selected items.lua" type="script" desc="Heinzenknecht Tools - Create regions from selected items grouped by time overlap">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Creates regions from selected items, grouped by time overlap across tracks.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Deletes overlapping regions and markers before creation. Names regions from the topmost parent track. Copies parent track color to created regions. Creates an outer GROUP_ region. Ensures at least three ruler lanes exist and assigns: lane 0 = parent region lane 1 = asset regions lane 2 = parent marker\par}
+}
+]]></description>
+        <link rel="website">https://heinzenknecht.com/</link>
+      </metadata>
+      <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Create%20regions%20from%20selected%20items.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Heinzenknecht Tools - Focus view to selected items.lua" type="script" desc="Heinzenknecht Tools - Focus view to selected items">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Zooms in horizontally to the selected items Sets the playhead to right before the first item\par}
+}
+]]></description>
+        <link rel="website">https://heinzenknecht.com/</link>
+      </metadata>
+      <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Focus%20view%20to%20selected%20items.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Heinzenknecht Tools - Propagate item fades.lua" type="script" desc="Heinzenknecht Tools - Propagate item fades">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Copy/paste fades Select one item first and run the action to copy, then several items to apply the same fades 1 selected item -> COPY 2+ selected items -> PASTE\par}
+}
+]]></description>
+        <link rel="website">https://heinzenknecht.com/</link>
+      </metadata>
+      <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Propagate%20item%20fades.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Heinzenknecht Tools - Split items and delete left side.lua" type="script" desc="Heinzenknecht Tools - Split items and delete left side">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Split selected item at edit cursor Delete the left side Add a 0.1s fade-in to the remaining left side.\par}
+}
+]]></description>
+        <link rel="website">https://heinzenknecht.com/</link>
+      </metadata>
+      <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Split%20items%20and%20delete%20left%20side.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Heinzenknecht Tools - Split items and delete right side.lua" type="script" desc="Heinzenknecht Tools - Split items and delete right side">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Split selected item at edit cursor Delete the right side Add a 0.1s fade-in to the remaining right side.\par}
+}
+]]></description>
+        <link rel="website">https://heinzenknecht.com/</link>
+      </metadata>
+      <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/3f9d8d95b8d4b21fb933334e557d704e063b730d/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Split%20items%20and%20delete%20right%20side.lua</source>
       </version>
     </reapack>
   </category>
   <metadata>
-    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 ReaPack Repository Template\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 A template for GitHub-hosted ReaPack repositories with automated {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index"}}{\fldrslt{\ul
-reapack-index
-}}}
- running from GitHub Actions.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Replace the name of the repository in {\field{\*\fldinst{HYPERLINK "/index.xml"}}{\fldrslt{\ul
-index.xml
-}}}
- when using this template. This will be the name shown in ReaPack.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \f1 <index version="1" name="Name of your repository here">\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Replace the contents of this file ({\field{\*\fldinst{HYPERLINK "/README.md"}}{\fldrslt{\ul
-README.md
-}}}
-). This will be the text shown when using ReaPack's "About this repository" feature.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 reapack-index looks for package files in subfolders. The folder tree represents the package categories shown in ReaPack.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Each package file is expected to begin with a metadata header. See {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index/wiki/Packaging-Documentation"}}{\fldrslt{\ul
-Packaging Documentation
-}}}
- on reapack-index's wiki.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 The URL to import in ReaPack is {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-repository-template/raw/master/index.xml"}}{\fldrslt{\ul
-https://github.com/{\f1 <your username>}/{\f1 <repository name>}/raw/master/index.xml
-}}}
-.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Heinzenknecht Audio Reaper Tools\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A collection of ReaScripts for REAPER focused on making my life easier working in game audio.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Installation\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 1.\tx360\tab Install ReaPack.\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 2.\tx360\tab In REAPER, open {\b Extensions \u8594 ? ReaPack \u8594 ? Import repositories...}\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 3.\tx360\tab Add the following repository URL:\par}
+{\pard \ql \f0 \sa180 \li360 \fi0 https://github.com/heinzenknecht/heinzenknecht-tools/raw/master/index.xml\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 4.\tx360\tab Synchronize packages and install the scripts you want.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Available Scripts\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Align Items for Asset Creation} \u8212- Organize items for asset export workflows.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Create Regions from Selected Items} \u8212- Generate organized regions from overlapping items.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Focus View to Selected Items} \u8212- Zoom to selected items and position the edit cursor.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Propagate Item Fades} \u8212- Copy and paste fade settings between items.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Split Items and Delete Left Side} \u8212- Trim everything before the edit cursor.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Split Items and Delete Right Side} \u8212- Trim everything after the edit cursor.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Author\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Guido Heinzenknecht\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 https://heinzenknecht.com/\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 https://www.linkedin.com/in/heinzenknecht/\par}
 }
 ]]></description>
   </metadata>

@@ -1,23 +1,30 @@
-# ReaPack Repository Template
+# Heinzenknecht Audio Reaper Tools
 
-A template for GitHub-hosted ReaPack repositories with automated
-[reapack-index](https://github.com/cfillion/reapack-index)
-running from GitHub Actions.
+A collection of ReaScripts for REAPER focused on making my life easier working in game audio.
 
-Replace the name of the repository in [index.xml](/index.xml) when using this template.
-This will be the name shown in ReaPack.
+## Installation
 
-```xml
-<index version="1" name="Name of your repository here">
-```
+1. Install ReaPack.
+2. In REAPER, open **Extensions → ReaPack → Import repositories...**
+3. Add the following repository URL:
 
-Replace the contents of this file ([README.md](/README.md)).
-This will be the text shown when using ReaPack's "About this repository" feature.
+    https://github.com/heinzenknecht/heinzenknecht-tools/raw/master/index.xml
 
-reapack-index looks for package files in subfolders.
-The folder tree represents the package categories shown in ReaPack.
+4. Synchronize packages and install the scripts you want.
 
-Each package file is expected to begin with a metadata header.
-See [Packaging Documentation](https://github.com/cfillion/reapack-index/wiki/Packaging-Documentation) on reapack-index's wiki.
+## Available Scripts
 
-The URL to import in ReaPack is [https://github.com/`<your username>`/`<repository name>`/raw/master/index.xml](https://github.com/cfillion/reapack-repository-template/raw/master/index.xml).
+- **Align Items for Asset Creation** — Organize items for asset export workflows.
+- **Create Regions from Selected Items** — Generate organized regions from overlapping items.
+- **Focus View to Selected Items** — Zoom to selected items and position the edit cursor.
+- **Propagate Item Fades** — Copy and paste fade settings between items.
+- **Split Items and Delete Left Side** — Trim everything before the edit cursor.
+- **Split Items and Delete Right Side** — Trim everything after the edit cursor.
+
+## Author
+
+Guido Heinzenknecht
+
+https://heinzenknecht.com/
+
+https://www.linkedin.com/in/heinzenknecht/
