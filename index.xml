@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Heinzenknecht Tools" commit="e351037f6dfd51b62f43fb5bcf04d65a98e7d032">
+<index version="1" name="Heinzenknecht Tools" commit="42df70eb86166e105843c5fe1636a1893c564141">
   <category name="Heinzenknecht Tools">
     <reapack name="Heinzenknecht Tools - Align items for asset creation.lua" type="script" desc="Heinzenknecht Tools - Align items for asset creation">
       <metadata>
@@ -71,6 +71,41 @@
       </metadata>
       <version name="1.0" author="Guido Heinzenknecht" time="2026-06-20T22:02:18Z">
         <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/e351037f6dfd51b62f43fb5bcf04d65a98e7d032/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Propagate%20item%20fades.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Heinzenknecht Tools - Smart tracks creator.lua" type="script" desc="Heinzenknecht Tools - Smart Tracks Creator">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Replaces REAPER's default track creation behavior with folder-aware logic optimized for asset organization workflows.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If no track is selected:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a new folder track is created at the end of the project\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab two child tracks are automatically created beneath it\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the folder is immediately collapsed\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If a regular top-level track is selected:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a new folder track is created below the selected track\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab two child tracks are automatically created beneath it\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the folder is immediately collapsed\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If a collapsed folder parent is selected:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a new folder track is created after the entire folder block\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab two child tracks are automatically created beneath it\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab the folder is immediately collapsed\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If an expanded folder parent is selected:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a single child track is created directly inside the folder\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If a child track is selected:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a single track is created below the selected track\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 If the selected child track is the last track in its folder:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab a new child track is created within the same folder\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab folder closing information is automatically transferred to preserve the folder structure\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Newly created folder tracks are created in a fully collapsed state.\par}
+}
+]]></description>
+        <link rel="website">https://heinzenknecht.com/</link>
+      </metadata>
+      <version name="1.0" author="Guido Heinzenknecht" time="2026-06-23T18:07:20Z">
+        <source main="main">https://github.com/heinzenknecht/heinzenknecht-tools/raw/42df70eb86166e105843c5fe1636a1893c564141/Heinzenknecht%20Tools/Heinzenknecht%20Tools%20-%20Smart%20tracks%20creator.lua</source>
       </version>
     </reapack>
     <reapack name="Heinzenknecht Tools - Split items and delete left side.lua" type="script" desc="Heinzenknecht Tools - Split items and delete left side">
